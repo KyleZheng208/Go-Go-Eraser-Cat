@@ -30,6 +30,7 @@ public class movment : MonoBehaviour
         if (rb.position.y < -1f && end_trigger.won == false)
         {
             FindObjectOfType<game_manager>().end_game();
+            game_manager.dead = true;
         }
     }
 }

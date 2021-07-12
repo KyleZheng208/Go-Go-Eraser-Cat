@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.02
@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
+  m_HaloStrength: 0
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -1174,6 +1174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5c8ef61970036499a80af43dc0e195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fc: {fileID: 1638949937}
   restart_delay: 1
   complete_level_UI: {fileID: 91971173}
 --- !u!4 &672359902
@@ -2985,6 +2986,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 60fa3f97bcdb5c4469682cc7972cdf2f, type: 2}
+    - target: {fileID: 3425456536513944188, guid: cac0a05ce26cbc8458d5f4a6f7ee7af5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f70fed5a33aa984994d66f1028a26f6, type: 2}
     - target: {fileID: 3429413545777506435, guid: cac0a05ce26cbc8458d5f4a6f7ee7af5, type: 3}
       propertyPath: m_Drag
       value: 1
@@ -2993,6 +2998,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 4664680240326363523, guid: cac0a05ce26cbc8458d5f4a6f7ee7af5, type: 3}
+      propertyPath: fc
+      value: 
+      objectReference: {fileID: 1638949937}
     - target: {fileID: 4664680240326363523, guid: cac0a05ce26cbc8458d5f4a6f7ee7af5, type: 3}
       propertyPath: mov
       value: 

@@ -11,8 +11,11 @@ public class end_trigger : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        won = true;
-        gameManager.win();
+        if (game_manager.dead == false)
+        {
+            won = true;
+            gameManager.win();
+        }
     }
 
     void Update()

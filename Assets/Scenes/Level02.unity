@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.02
@@ -1293,6 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5c8ef61970036499a80af43dc0e195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fc: {fileID: 1638949937}
   restart_delay: 1
   complete_level_UI: {fileID: 91971173}
 --- !u!4 &672359902
@@ -1612,6 +1613,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 4664680240326363523, guid: cac0a05ce26cbc8458d5f4a6f7ee7af5, type: 3}
+      propertyPath: fc
+      value: 
+      objectReference: {fileID: 1638949937}
     - target: {fileID: 4664680240326363523, guid: cac0a05ce26cbc8458d5f4a6f7ee7af5, type: 3}
       propertyPath: mov
       value: 
