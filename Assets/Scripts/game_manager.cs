@@ -5,6 +5,7 @@ public class game_manager : MonoBehaviour
 {
 
     bool game_ended = false;
+    public static int deaths = 0;
     public follow_player fc;
     public static bool dead = false;
     public float restart_delay = 2f;
@@ -36,5 +37,4 @@ public class game_manager : MonoBehaviour
     {
         complete_level_UI.SetActive(true);
     }
-
 }

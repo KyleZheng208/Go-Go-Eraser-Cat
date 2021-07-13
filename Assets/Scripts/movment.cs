@@ -5,7 +5,13 @@ using UnityEngine;
 public class movment : MonoBehaviour
 {
 
+    void Start()
+    {
+        hasAddedDeath = false;
+    }
+
     public Rigidbody rb;
+    private bool hasAddedDeath = false;
     // Declaring a variable that is used for forces
     public float forward_force = 1000f;
     public float sideways_force = 250f;
@@ -29,6 +35,11 @@ public class movment : MonoBehaviour
 
         if (rb.position.y < -1f && end_trigger.won == false)
         {
+            if (hasAddedDeath == false)
+            {
+                game_manager.deaths++;
+                hasAddedDeath = true;
+            }
             FindObjectOfType<game_manager>().end_game();
             game_manager.dead = true;
         }
