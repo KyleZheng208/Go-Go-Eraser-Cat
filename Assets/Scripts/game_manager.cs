@@ -15,6 +15,7 @@ public class game_manager : MonoBehaviour
     void Start()
     {
         dead = false;
+        complete_level_UI.SetActive(false);
     }
 
     public void end_game()

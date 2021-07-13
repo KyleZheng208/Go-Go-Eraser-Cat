@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 public class end_trigger : MonoBehaviour
 {
 
+    void Start()
+    {
+        won = false;
+    }
+
     public game_manager gameManager;
     public static bool won = false;
 
@@ -13,24 +18,23 @@ public class end_trigger : MonoBehaviour
     {
         if (game_manager.dead == false)
         {
+            Debug.Log("win");
             won = true;
-            gameManager.win();
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
+
+        if(won == true)
+        {
+            gameManager.win();
+        }
+
         if(won == true && Input.GetKey("space"))
         {
             won = false;
-            try
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
-            catch
-            {
-                Debug.Log("Error");
-            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
